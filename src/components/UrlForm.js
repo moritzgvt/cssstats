@@ -22,6 +22,7 @@ export default ({ showLabel = false }) => {
         placeholder="google.com"
         inputMode="url"
         value={url}
+        onKeyUp={e => e.target.value = e.target.value.toLowerCase()} 
         onChange={e => setUrl(e.target.value)}
         sx={{ color: 'text' }}
       />
